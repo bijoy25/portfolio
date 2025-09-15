@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bijoy Sikder | About</title> 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+  .img{
+    margin-top: -100px;
+  }
+  /* Small polish for animation easing */
+    .progress-inner {
+        transition: width 1.2s cubic-bezier(.2,.9,.2,1);
+    }
+</style>
+
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-blue-500 shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-6 sm:px-32 flex justify-between items-center py-4 ">
+      <a class="flex items-center gap-2 md:gap-3" href="index.html"><img src="img/bijoy.png" class="w-10 rounded-full" alt="">
+        <div class="block pt-2.5">
+          <h1 class="text-[15px] font-bold text-indigo-600 text-white">Bijoy</h1>
+        <p class="text-[13px] text-gray-300">Front-End Web Developer</p>
+        </div>
+      </a>
+      <div class="flex">
+        <ul class="flex hidden md:flex gap-2 items-center text-gray-600 text-white">
+          <li><a href="index.html" class="hover:text-indigo-300 pr-4">Home</a></li>
+          <li><a href="about.html" class="hover:text-indigo-300 pr-4">About</a></li>
+          <li><a href="project.html" class="hover:text-indigo-300 pr-4">Projects</a></li>
+          <li><a href="contact.html" class="hover:text-indigo-300 pr-4">Contact</a></li>
+          <li><a href="Bijoy_Sikdar_CV.pdf" target="_bank" class="hover:text-indigo-300 bg-indigo-600 text-white px-5 py-2 rounded-md  text-[17px]">CV</a></li>
+        </ul>
+        
+    <button id="navBtn" class="md:hidden p-2 rounded hover:bg-gray-500 text-white">☰</button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileNav" class="md:hidden hidden border-t text-white">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="index.html" class="hover:text-indigo-300 pr-6">Home</a>
+        <a href="about.html" class="hover:text-indigo-300 pr-6">About</a>
+        <a href="project.html" class="hover:text-indigo-300 pr-6">Projects</a>
+        <a href="contact.html" class="hover:text-indigo-300 pr-6">Contact</a>
+        <a href="Bijoy_Sikdar_CV.pdf" target="_bank" class="hover:text-indigo-300 pr-6">CV</a>
+      </div>
+    </div>
+  </header>
+
+  <script>
+  // Mobile nav toggle
+      document.getElementById('navBtn').addEventListener('click', ()=>{
+      document.getElementById('mobileNav').classList.toggle('hidden');
+      });
+  </script>
+
+
+
+  <!-- About Section -->
+   <section id="about" class="container mx-auto px-6 md:px-32 py-20 px-4">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <img src="img/bijoy.png" class="rounded-xl shadow-lg" style="height:300px;" alt="Profile">
+      <div>
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <p class="text-gray-600 mb-4">I'm a passionate web developer with experience in creating responsive, modern websites using HTML, CSS, Tailwind, Bootstrap, and WordPress. I love turning ideas into reality through clean code and creative design.</p>
+      <p class="text-gray-600">When I'm not coding, I explore new technologies and work on personal projects to sharpen my skills.</p>
+    </div>
+    </div>
+  </section>
+
+
+
+
+  <div class="bg-slate-50 min-h-screen flex items-center justify-center">
+        <main class="container mx-auto px-6 sm:px-32 max-w-3xl w-full">
+            <header class="mb-6">
+                <h1 class="text-3xl font-extrabold text-slate-800 mb-1">My Skills</h1>
+                <p class="text-slate-600">Quick, copy/paste-ready skill bars you can use in a portfolio, CV or WordPress custom HTML block.</p>
+            </header>
+        <!-- html -->
+         <li>
+        <div class="flex items-center justify-between mb-2">
+        <div class="flex items-center gap-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" /></svg>
+        <strong class="text-slate-800">Html</strong>
+        </div>
+        <span class="text-sm font-medium text-slate-600">100%</span>
+        </div>
+        <div class="w-full bg-slate-100 rounded-full h-4 overflow-hidden">
+        <div class="progress-inner h-full rounded-full bg-gradient-to-r from-blue-400 to-cyan-500" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" data-percent="100" style="width:0%"></div>
+        </div>
+        </li>
+        </ul>
+
+        <!-- css -->
+
+        <li>
+        <div class="flex items-center justify-between mb-2">
+        <div class="flex items-center gap-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" /></svg>
+        <strong class="text-slate-800">css</strong>
+        </div>
+        <span class="text-sm font-medium text-slate-600">100%</span>
+        </div>
+        <div class="w-full bg-slate-100 rounded-full h-4 overflow-hidden">
+        <div class="progress-inner h-full rounded-full bg-gradient-to-r from-blue-400 to-cyan-500" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" data-percent="100" style="width:0%"></div>
+        </div>
+        </li>
+        </ul>
+
+
+        <!-- Tailwind -->
+        <li>
+        <div class="flex items-center justify-between mb-2">
+        <div class="flex items-center gap-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l9 4v6c0 6-6 10-9 10S3 18 3 12V6z"/></svg>
+        <strong class="text-slate-800">Tailwind CSS</strong>
+        </div>
+        <span class="text-sm font-medium text-slate-600">100%</span>
+        </div>
+        <div class="w-full bg-slate-100 rounded-full h-4 overflow-hidden">
+        <div class="progress-inner h-full rounded-full bg-gradient-to-r from-emerald-400 to-lime-500" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" data-percent="100" style="width:0%"></div>
+        </div>
+        </li>
+
+
+        <!-- Bootstrap -->
+        <li>
+        <div class="flex items-center justify-between mb-2">
+        <div class="flex items-center gap-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-violet-600" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16v16H4z" /></svg>
+        <strong class="text-slate-800">Bootstrap</strong>
+        </div>
+        <span class="text-sm font-medium text-slate-600">95%</span>
+        </div>
+        <div class="w-full bg-slate-100 rounded-full h-4 overflow-hidden">
+        <div class="progress-inner h-full rounded-full bg-gradient-to-r from-violet-400 to-fuchsia-500" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="95" data-percent="95" style="width:0%"></div>
+        </div>
+        </li>
+
+
+        <!-- WordPress -->
+        <li>
+        <div class="flex items-center justify-between mb-2">
+        <div class="flex items-center gap-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" /></svg>
+        <strong class="text-slate-800">WordPress</strong>
+        </div>
+        <span class="text-sm font-medium text-slate-600">90%</span>
+        </div>
+        <div class="w-full bg-slate-100 rounded-full h-4 overflow-hidden">
+        <div class="progress-inner h-full rounded-full bg-gradient-to-r from-blue-400 to-cyan-500" role="progressbar" aria-valuemin="0" aria-valuemax="80" aria-valuenow="90" data-percent="90" style="width:0%"></div>
+        </div>
+        </li>
+        </ul>
+
+
+        
+        </main>
+
+
+        <script>
+        // Animate progress bars on load (except the HTML bar which is already 100%)
+        document.addEventListener('DOMContentLoaded', () => {
+        const bars = document.querySelectorAll('.progress-inner[data-percent]');
+        bars.forEach(bar => {
+        const pct = bar.getAttribute('data-percent') || '0';
+        // small delay for nicer entrance
+        setTimeout(() => {
+        bar.style.width = pct + '%';
+        bar.setAttribute('aria-valuenow', pct);
+        }, 120);
+        });
+        });
+        </script>
+
+  </div>
+
+  
+  <!-- Footer --> 
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <div class="container mx-auto px-6 sm:px-32 flex justify-center gap-3 pb-2">
+        <a href="https://web.facebook.com/bijoy.sikdar.21306"><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:mdbijoysikder25@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <p>© 2025 Bijoy Sikder | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>

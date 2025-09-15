@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bijoy Sikder | Project</title> 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+  .img{
+    margin-top: -100px;
+  }
+</style>
+<body class="bg-gray-100 font-sans">
+ <!-- navbar -->
+  <header class="bg-blue-500 shadow-md sticky top-0 z-50">
+    <nav class="container px-6 mx-auto sm:px-32 flex justify-between items-center py-4">
+     <a class="flex items-center gap-2 md:gap-3" href="index.html"><img src="img/bijoy.png" class="w-10 rounded-full" alt="">
+        <div class="block pt-2.5">
+          <h1 class="text-[15px] font-bold text-indigo-600 text-white">Bijoy</h1>
+        <p class="text-[13px] text-gray-300">Front-End Web Developer</p>
+        </div>
+      </a>
+      <div class="flex">
+        <ul class="flex hidden md:flex gap-2 items-center text-gray-600 text-white">
+          <li><a href="index.html" class="hover:text-indigo-300 pr-4">Home</a></li>
+          <li><a href="about.html" class="hover:text-indigo-300 pr-4">About</a></li>
+          <li><a href="project.html" class="hover:text-indigo-300 pr-4">Projects</a></li>
+          <li><a href="contact.html" class="hover:text-indigo-300 pr-4">Contact</a></li>
+          <li><a href="Bijoy_Sikdar_CV.pdf" target="_bank" class="hover:text-indigo-300 bg-indigo-600 text-white px-5 py-2 rounded-md  text-[17px]">CV</a></li>
+        </ul>
+        
+    <button id="navBtn" class="md:hidden p-2 rounded hover:bg-gray-500 text-white">☰</button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileNav" class="md:hidden hidden border-t text-white">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="index.html" class="hover:text-indigo-300 pr-6">Home</a>
+        <a href="about.html" class="hover:text-indigo-300 pr-6">About</a>
+        <a href="project.html" class="hover:text-indigo-300 pr-6">Projects</a>
+        <a href="contact.html" class="hover:text-indigo-300 pr-6">Contact</a>
+        <a href="Bijoy_Sikdar_CV.pdf" target="_bank" class="hover:text-indigo-300 pr-6">CV</a>
+      </div>
+    </div>
+  </header>
+
+  <script>
+  // Mobile nav toggle
+      document.getElementById('navBtn').addEventListener('click', ()=>{
+      document.getElementById('mobileNav').classList.toggle('hidden');
+      });
+  </script>
+
+
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="bg-gray-50 py-16 ">
+    <div class="container px-6 mx-auto sm:px-32">
+      <h2 class="text-3xl font-bold text-center mb-10">My Sample Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/personal-site.png" alt="Project 1" class="w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Portfolio Website</h3>
+            <p class="text-gray-600">A responsive portfolio website built with HTML, CSS, and Bootstrap.</p>
+          </div>
+          <a href="#"><button class="bg-blue-500 text-white p-2 rounded-[4px] mb-3 ml-4">Live demo</button></a>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/business.png" alt="Project 2" class="w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Business Website</h3>
+            <p class="text-gray-600">A modern business landing page designed with Tailwind CSS.</p>
+          </div>
+          <a href="https://bijoy25.github.io/business/"><button class="bg-blue-500 text-white p-2 rounded-[4px] mb-3 ml-4">Live demo</button></a>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/ecommers.png" alt="Project 3" class="w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">E-commerce Homepage</h3>
+            <p class="text-gray-600">A clean and responsive e-commerce homepage built using WordPress.</p>
+          </div>
+          <a href="https://bijoy25.github.io/ecom/"><button class="bg-blue-500 text-white p-2 rounded-[4px] mb-3 ml-4">Live demo</button></a>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/Blog.png" alt="Project 3" class="w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Blog Homepage</h3>
+            <p class="text-gray-600">A clean and responsive blog homepage built using WordPress.</p>
+          </div>
+          <a href="https://bijoy25.github.io/blog/"><button class="bg-blue-500 text-white p-2 rounded-[4px] mb-3 ml-4">Live demo</button></a>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="img/cours.png" alt="Project 3" class="w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold">Education Homepage</h3>
+            <p class="text-gray-600">A clean and responsive education homepage built using WordPress.</p>
+          </div>
+          <a href="https://bijoy25.github.io/education/"><button class="bg-blue-500 text-white p-2 rounded-[4px] mb-3 ml-4">Live demo</button></a>
+        </div>
+
+
+
+
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+
+
+
+ 
+  
+
+
+  <!-- Footer --> 
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <div class="container mx-auto px-6 sm:px-32 flex justify-center gap-3 pb-2">
+        <a href="https://web.facebook.com/bijoy.sikdar.21306"><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:mdbijoysikder25@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <p>© 2025 Bijoy Sikder | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
